@@ -1,7 +1,12 @@
 h1, h2, h3, h4, h5, h6{
   font-family: 'Sacramento', cursive;
+
 }
 
 p {
   font-family: 'Alice', serif;
+}
+
+body{
+  padding: 20px 80px;
 }
