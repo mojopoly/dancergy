@@ -7,7 +7,6 @@ import CartDropdown from '../cart-dropdown/cart-dropdown.component';
 import {auth} from '../../firebase/firebase.utils';
 
 import './header.styles.scss';
-// import { userInfo } from 'os';
 
 const Header = ({currentUser, hidden}) => (
   <div className='header'>
