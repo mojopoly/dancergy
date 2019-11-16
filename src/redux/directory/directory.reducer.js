@@ -1,10 +1,16 @@
+//Flamingo Fun Fanny Pack
+// Emerald Dream Shoulder Bag
+
+// Peek-A-Boo Phone Holder Garter (lace)
+// Gold Gang Fanny Pack
+// Sleek & Sexy Snake Waist Bag
 const INITIAL_STATE = {
   sections: [
     {
-      title: 'hats',
-      imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+      title: 'Flamingo Fun Fanny Pack',
+      imageUrl: 'https://i.imgur.com/0Uf9C1M.png',
       id: 1,
-      linkUrl: 'shop/hats'
+      linkUrl: 'shop/flamingo-fun-fanny-pack'
     },
     {
       title: 'jackets',
@@ -33,13 +39,13 @@ const INITIAL_STATE = {
       linkUrl: 'shop/mens'
     }
   ]
-}
+};
 
 const directoryReducer = (state = INITIAL_STATE, action) => {
-  switch(action.type) {
+  switch (action.type) {
     default:
       return state;
   }
-}
+};
 
 export default directoryReducer;

@@ -5,14 +5,41 @@
   padding: 20px 80px;
 }
 .homepage-hero {
-  height: 100vh;
   display: flex;
   align-items: center;
-}
+  .homepage-hero-image {
+    position: relative;
+  }
+  .homepage-hero-text {
+    position: absolute;
+    left: 5%;
+    font-size: 70px;
+    color: purple;
+    box-shadow: inset 0 0 0 3000px rgba(255,255,255,0.7);
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+    @keyframes fadeInOpacity {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    
+  }
 
+  }
+  .directory-menu-heading{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    margin-bottom: 50px;
+  }
 .about-us{
   height: 300px;
 }
-
-
 
