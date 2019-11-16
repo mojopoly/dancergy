@@ -1,10 +1,10 @@
 h1, h2, h3, h4, h5, h6{
-  font-family: 'Sacramento', cursive;
+  font-family: 'Playfair Display', serif;
 
 }
 
 p, span {
-  font-family: 'Alice', serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 body{
@@ -14,7 +14,7 @@ body{
 
 a {
   text-decoration: none;
-  color: purple;
+  color: #89325F;
 }
 
 * {

@@ -6,7 +6,7 @@
   line-height: 50px;
   padding: 0 35px 0 35px;
   font-size: 15px;
-  background-color: purple;
+  background-color: #89325F;
   color: white;
   text-transform: uppercase;
   //font-family: 'Open Sans Condensed';
@@ -18,7 +18,7 @@
 
   &:hover {
     background-color: white;
-    color: purple;
+    color: #89325F;
     border: 1px solid black;
   }
 
@@ -32,10 +32,10 @@
   }
   &.inverted{
     background-color: white;
-    color: purple;
+    color: #89325F;
     border: 1px solid black;
     &:hover {
-      background-color: purple;
+      background-color: #89325F;
       color: white;
       border: none;
     }

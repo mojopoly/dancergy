@@ -7,16 +7,16 @@
 const INITIAL_STATE = {
   sections: [
     {
-      title: 'Flamingo Fun Fanny Pack',
+      title: 'Flamingo Fun',
       imageUrl: 'https://i.imgur.com/0Uf9C1M.png',
       id: 1,
-      linkUrl: 'shop/flamingo-fun-fanny-pack'
+      linkUrl: 'shop/flamingo-fun'
     },
     {
-      title: 'jackets',
-      imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+      title: 'Emerald Dream',
+      imageUrl: 'https://i.imgur.com/PvIb5Od.png',
       id: 2,
-      linkUrl: 'shop/jackets'
+      linkUrl: 'shop/emerald-dream-shoulder-bag'
     },
     {
       title: 'sneakers',
