@@ -7,36 +7,36 @@
 const INITIAL_STATE = {
   sections: [
     {
-      title: 'Flamingo Fun',
+      title: 'Astral',
       imageUrl: 'https://i.imgur.com/0Uf9C1M.png',
       id: 1,
-      linkUrl: 'shop/flamingo-fun'
+      linkUrl: 'shop/astral'
     },
     {
-      title: 'Emerald Dream',
+      title: 'Stellar',
       imageUrl: 'https://i.imgur.com/PvIb5Od.png',
       id: 2,
-      linkUrl: 'shop/emerald-dream-shoulder-bag'
+      linkUrl: 'shop/stellar'
     },
     {
-      title: 'sneakers',
-      imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+      title: 'Halo',
+      imageUrl: 'https://i.imgur.com/qIhTTMi.png',
       id: 3,
-      linkUrl: 'shop/sneakers'
+      linkUrl: 'shop/halo'
     },
     {
-      title: 'womens',
-      imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
+      title: 'Venus',
+      imageUrl: 'https://i.imgur.com/H7F8ra3.jpg',
       size: 'large',
       id: 4,
-      linkUrl: 'shop/womens'
+      linkUrl: 'shop/venus'
     },
     {
-      title: 'mens',
-      imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
+      title: 'Starburst',
+      imageUrl: 'https://i.imgur.com/QBSR542.png',
       size: 'large',
       id: 5,
-      linkUrl: 'shop/mens'
+      linkUrl: 'shop/starburst'
     }
   ]
 };

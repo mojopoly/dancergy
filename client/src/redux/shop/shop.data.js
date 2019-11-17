@@ -1,66 +1,77 @@
 const SHOP_DATA = {
-  hats: {
+  astral: {
     id: 1,
-    title: 'Hats',
-    routeName: 'hats',
+    title: 'Astral',
+    routeName: 'astral',
+    linkUrl: 'astral',
     items: [
       {
         id: 1,
-        name: 'Brown Brim',
-        imageUrl: 'https://i.ibb.co/ZYW3VTp/brown-brim.png',
-        price: 25
+        name: 'Astral',
+        description: 'Astral comes with a fun 3D print design and is the perfect fanny pack if you want to feel cool as a cucumber!',
+        colors: [
+          {id: 1, name: 'Dark Blue'},
+          {id: 2, name: 'Green'}, 
+          {id: 3, name:'Blue'}, 
+          {id: 4, name:'Pink'}
+        ],
+        imageUrl: 'https://i.imgur.com/H7F8ra3.jpg',
+        imageUrl2: 'https://i.imgur.com/vLcH4z0.png',
+        imageUrl3: 'https://i.imgur.com/NrQhCx0.png',
+        imageUrl4: 'https://i.imgur.com/uaENJlZ.png',
+        price: 25,
       }
     ]
   },
-  sneakers: {
+  halo: {
     id: 2,
-    title: 'Sneakers',
-    routeName: 'sneakers',
+    title: 'Halo',
+    routeName: 'halo',
     items: [
       {
         id: 10,
-        name: 'Adidas NMD',
-        imageUrl: 'https://i.ibb.co/0s3pdnc/adidas-nmd.png',
-        price: 220
+        name: 'Halo',
+        imageUrl: 'https://i.imgur.com/odccY4L.jpg',
+        price: 20
       }
     ]
   },
-  jackets: {
+  starburst: {
     id: 3,
-    title: 'Jackets',
-    routeName: 'jackets',
+    title: 'Starburst',
+    routeName: 'starburst',
     items: [
       {
         id: 18,
-        name: 'Black Jean Shearling',
-        imageUrl: 'https://i.ibb.co/XzcwL5s/black-shearling.png',
-        price: 125
-      }
-    ]
-  },
-  womens: {
-    id: 4,
-    title: 'Womens',
-    routeName: 'womens',
-    items: [
-      {
-        id: 23,
-        name: 'Blue Tanktop',
-        imageUrl: 'https://i.ibb.co/7CQVJNm/blue-tank.png',
+        name: 'Starburst',
+        imageUrl: 'https://i.imgur.com/qIhTTMi.png',
         price: 25
       }
     ]
   },
-  mens: {
-    id: 5,
-    title: 'Mens',
-    routeName: 'mens',
+  stellar: {
+    id: 4,
+    title: 'Stellar',
+    routeName: 'stellar',
     items: [
       {
-        id: 30,
-        name: 'Camo Down Vest',
-        imageUrl: 'https://i.ibb.co/xJS0T3Y/camo-vest.png',
-        price: 325
+        id: 4,
+        name: 'Stellar',
+        imageUrl: 'https://i.imgur.com/PvIb5Od.png',
+        price: 25
+      }
+    ]
+  },
+  venus: {
+    id: 5,
+    title: 'Venus',
+    routeName: 'venus',
+    items: [
+      {
+        id: 5,
+        name: 'Venus',
+        imageUrl: 'https://i.imgur.com/DI0aejP.png',
+        price: 25
       }
     ]
   }

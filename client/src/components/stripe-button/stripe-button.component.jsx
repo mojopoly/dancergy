@@ -2,6 +2,7 @@ import React from 'react';
 import StripeCheckout from 'react-stripe-checkout';
 import axios from 'axios';
 import './stripe-button.styles.scss';
+import PurchaseConfirmation from '../../pages/purchase-confirmation/purchase-confirmation.component';
 
 const StripeCheckoutButton = ({price}) => {
   const priceForStripe = price * 100;
@@ -18,6 +19,7 @@ const StripeCheckoutButton = ({price}) => {
         token
       }
     }).then(response => {
+      console.log(response);
       alert('Payment successful')
     }).catch(error => {
       console.log('Payment error: ', JSON.parse(error));
@@ -38,7 +40,6 @@ const StripeCheckoutButton = ({price}) => {
       panelLabel = 'Pay Now'
       token={onToken} 
       stripeKey={publishableKey}
-
     />
   )
 }

@@ -3,12 +3,14 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 
   .logo-container {
     height: 100%;
     width: 70px;
-    //padding: 25px;
+    @media (max-width:800px) {
+      width: 70px;
+    }
   }
 
 
@@ -18,11 +20,17 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-
+    @media (max-width:800px) {
+      width: 100%;
+      font-size: 12px;
+    }
     .option {
       padding: 10px 15px;
       font-weight: bolder;
       cursor: pointer;
+      @media (max-width:800px) {
+        padding: 10px 5px;
+      }
     }
   }
 }

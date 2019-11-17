@@ -8,6 +8,11 @@
   border: 1px solid black;
   margin: 0 7.5px 15px;
   overflow: hidden;
+
+  @media (max-width:800px) {
+    min-width: 50%;
+    height: 300px;
+  }
   &:hover {
     & .background-image {
       transform: scale(1.15);
@@ -16,7 +21,10 @@
   }
 
   &.large {
-    height: 380px;
+    height: 700px;
+    @media (max-width:800px) {
+      height: 300px;
+    }
   }
 
   &:first-child {
@@ -45,6 +53,13 @@
     background-color: white;
     opacity: 0.7;
     position: absolute;
+    @media (max-width:800px) {
+      height: 45px;
+      padding: 20px;
+      .title{
+        font-size: 12px;
+      }
+    }
     &:hover {
       cursor: pointer;
       opacity: 0.8;
@@ -58,12 +73,18 @@
       margin-bottom: 1px;
       font-size: 15px;
       color: #89325F;
+      @media (max-width:800px) {
+        font-size: 12px;
+      }
     }
 
     .subtitle {
       font-weight: lighter;
       font-size: 16px;
       margin-bottom: 6px;
+      @media (max-width:800px) {
+        font-size: 12px;
+      }
     }
   }
 }

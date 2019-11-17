@@ -1,0 +1,8 @@
+    <select name="product-color" class="product-color">
+      {
+        collection.items[0].colors.map(color => {
+         //console.log(color);
+         return <option key={color.id} value={`${color.name}`}>{color.name}</option>
+        })
+      }
+    </select>

@@ -10,6 +10,10 @@
   top: 90px;
   right: 90px;
   z-index: 5;
+  @media (max-width:800px) {
+    right: unset;
+    width: 300px;
+  }
   .empty-message {
     font-size: 18px;
     margin: 50px auto;
