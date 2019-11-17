@@ -2,11 +2,26 @@
   width: 450px;
   display: flex;
   flex-direction: column;
+  @media (max-width:800px) {
+    width: 300px;
+    h2 {
+      font-size: 24px;
+    }
+  }
   .title{
     margin: 10px 0;
   }
   .buttons{
     display: flex;
     justify-content: space-between;
+    @media (max-width:800px) {
+      transform: scale(.75);
+      justify-content: space-around;
+      button {
+        margin: 0 10px;
+        padding: 0;
+        font-size: 12px;
+      }
+    }
   }
 }
