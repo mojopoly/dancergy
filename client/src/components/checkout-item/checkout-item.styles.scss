@@ -6,6 +6,9 @@
   padding: 15px 0;
   font-size: 20px;
   align-items: center;
+  @media (max-width:800px) {
+    font-size: 12px;
+  }
 
   .image-container {
     width: 23%;
@@ -32,6 +35,9 @@
     }
     .value {
       margin: 0 10px;
+      @media (max-width:800px) {
+        margin: 0 5px;
+      }
     }
   }
 
