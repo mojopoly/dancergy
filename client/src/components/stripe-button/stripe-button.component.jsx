@@ -1,11 +1,16 @@
 import React from 'react';
 import StripeCheckout from 'react-stripe-checkout';
 import axios from 'axios';
+import {connect} from 'react-redux';
+import {createStructuredSelector} from 'reselect';
 import './stripe-button.styles.scss';
-import PurchaseConfirmation from '../../pages/purchase-confirmation/purchase-confirmation.component';
+//import PurchaseConfirmation from '../../pages/purchase-confirmation/purchase-confirmation.component';
 
-const StripeCheckoutButton = ({price}) => {
+const StripeCheckoutButton = ({price, cartItems}) => {
   const priceForStripe = price * 100;
+  console.log(cartItems);
+  const orderSummary = cartItems.reduce((cartItemAll, cartItem) => cartItemAll += cartItem.name + cartItem.quantity , '' )
+  console.log(orderSummary);
   const publishableKey = 'pk_test_gx1eYqPqsULK5XmlerI770jq00T06wpXBD'; 
   
   const onToken = token => {
@@ -16,6 +21,7 @@ const StripeCheckoutButton = ({price}) => {
       method: 'post',
       data: {
         amount: priceForStripe,
+        order: orderSummary,
         token
       }
     }).then(response => {
@@ -40,8 +46,12 @@ const StripeCheckoutButton = ({price}) => {
       panelLabel = 'Pay Now'
       token={onToken} 
       stripeKey={publishableKey}
+      label="Pay with 💳"
     />
   )
 }
 
+// const mapStateToProps = createStructuredSelector({
+//   cartItems: selectCartItems
+// })
 export default StripeCheckoutButton;
