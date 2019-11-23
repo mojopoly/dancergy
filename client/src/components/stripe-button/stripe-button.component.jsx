@@ -1,7 +1,6 @@
 import React from 'react';
 import StripeCheckout from 'react-stripe-checkout';
 import axios from 'axios';
-import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import './stripe-button.styles.scss';
 import {removeItemFromCart} from '../../redux/cart/cart.actions';
@@ -10,7 +9,7 @@ class StripeCheckoutButton extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      cardListBacklog: []
+      cardListBacklog: false
     };
   }
 
@@ -33,10 +32,10 @@ class StripeCheckoutButton extends React.Component {
       }
     })
     .then(response => {
-      alert(
-        `Payment successful, ${response.data.success.billing_details.name}; please check your email for your receipt.`
-      );
-      this.setState({cardListBacklog: ['1']});
+      // alert(
+      //   `Payment successful, ${response.data.success.billing_details.name}; please check your email for your receipt.`
+      // );
+      this.setState({cardListBacklog: true});
       })
       .catch(error => {
         console.log('Payment error: ', JSON.parse(error));
@@ -45,12 +44,15 @@ class StripeCheckoutButton extends React.Component {
   };
   render() {
     const publishableKey = 'pk_test_gx1eYqPqsULK5XmlerI770jq00T06wpXBD';
-    const { price } = this.props;
+    const { price, cartItems } = this.props;
+    console.log(cartItems)
     const priceForStripe = price * 100;
     return (
-      this.state.cardListBacklog.length
+      this.state.cardListBacklog
         ? 
-        <div>Payment Successful</div>
+        <div className="payment-successful">
+          <h1>Payment Successful! Please check your email for your receipt.</h1>
+        </div>
        :
       <StripeCheckout
         label="Pay Now"
