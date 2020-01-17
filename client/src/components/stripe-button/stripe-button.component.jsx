@@ -14,7 +14,7 @@ class StripeCheckoutButton extends React.Component {
   }
 
   onToken = token => {
-    console.log(token);
+    //console.log(token);
     const { cartItems, price } = this.props;
     const priceForStripe = price * 100;
     const orderSummary = cartItems.reduce(
@@ -38,14 +38,14 @@ class StripeCheckoutButton extends React.Component {
       this.setState({cardListBacklog: true});
       })
       .catch(error => {
-        console.log('Payment error: ', JSON.parse(error));
+        //console.log('Payment error: ', JSON.parse(error));
         alert('There was an issue with your payment. Please try again!');
       });
   };
   render() {
     const publishableKey = 'pk_test_gx1eYqPqsULK5XmlerI770jq00T06wpXBD';
     const { price, cartItems } = this.props;
-    console.log(cartItems)
+    //console.log(cartItems)
     const priceForStripe = price * 100;
     return (
       this.state.cardListBacklog

@@ -8,18 +8,19 @@ const SHOP_DATA = {
       {
         id: 1,
         name: 'Astral',
-        description: 'Astral comes with a fun 3D print design and is the perfect fanny pack if you want to feel cool as a cucumber!',
+        description:
+          'Astral comes with a fun 3D print design and is the perfect fanny pack if you want to feel cool as a cucumber!',
         colors: [
-          {id: 1, name: 'Dark Blue'},
-          {id: 2, name: 'Green'}, 
-          {id: 3, name:'Blue'}, 
-          {id: 4, name:'Pink'}
+          { id: 1, name: 'Dark Blue' },
+          { id: 2, name: 'Green' },
+          { id: 3, name: 'Blue' },
+          { id: 4, name: 'Pink' }
         ],
         imageUrl: 'https://i.imgur.com/H7F8ra3.jpg',
         imageUrl2: 'https://i.imgur.com/vLcH4z0.png',
         imageUrl3: 'https://i.imgur.com/NrQhCx0.png',
         imageUrl4: 'https://i.imgur.com/uaENJlZ.png',
-        price: 25,
+        price: 25
       }
     ]
   },

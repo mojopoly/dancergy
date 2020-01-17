@@ -20,7 +20,7 @@ const HomePage = () => (
       </h2>
       <div className="about-us-container">
         <div className="about-us-img">
-          <img src="https://i.imgur.com/M3bTh3y.jpg?1" />
+          <img src="https://i.imgur.com/UHYvwmH.jpg" />
         </div>
         <p className="about-us-text">
           We’ve been dancing in our respective communities for over 7 years and
