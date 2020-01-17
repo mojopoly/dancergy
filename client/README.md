@@ -1,69 +1,33 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1><a href="https://dancergy.herokuapp.com/">Dancergy E-Commerce App</a></h1>
 
-## Available Scripts
+<h1>Front End Code
 
-In the project directory, you can run:
+<h1>Tech Stack</h1>
+<ul>
+  <li>Front-End:HTML, CSS, JavaScript, React (bootstrapped with Create-React-App)</li>
+  <li>Server: Node.js, Express.js</li>
+  <li>Firebase</li>
+  <li>Stripe Checkout Integration</li>
+</ul>
 
-### `yarn start`
+<h2>Project Guidelines</h2><br>
+<p>The aim for this project is to build an ecommerce app to sell a handful of dancing accessories. To complete the project, the below user stories needed to be fulfilled:</p><br>
+<ul>
+<li>I can go to collection page/individual product pages from home page </li>
+<li>I am able to register both with email and Gmail </li>
+<li>I am able to login and logout </li>
+<li>I am able to checkout and pay with a credit card </li>
+<li>I am able to see my cart items even if I leave the website and come back to it. </li>
+</ul>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<h2>Project Approach</h2>
+<p>For this full-stack web app, I created the front end components and UI using React, JavaScript, CSS & HTML. This involved creating the signin, register and the home (logged in) screens along with Google OAuth.</p><br>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<p>The next part was creating the backend of this project using node.js and express to get a token from front end and process payment using Stripe gateway.</p><br>
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p>The app was fully deployed to Heroku.</p><br>
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Check out the <a href="https://dancergy.herokuapp.com/">live version</a>
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# dancergy
