@@ -1,6 +1,5 @@
 <h1><a href="https://dancergy.herokuapp.com/">Dancergy E-Commerce App</a></h1>
 
-<h1>Front End Code
 
 <h1>Tech Stack</h1>
 <ul>
